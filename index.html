@@ -8,11 +8,11 @@
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
 <mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Aplicación de SharePoint</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">AplicaciÃ³n de SharePoint</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:Order msdt:dt="string">2700.00000000000</mso:Order>
 <mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
 <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Aplicación de SharePoint</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">AplicaciÃ³n de SharePoint</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
 <mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
 <mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
 <mso:ReferenceId msdt:dt="string"></mso:ReferenceId>
@@ -138,11 +138,22 @@
 <section class="suscripcion">
     <div class="contenedor">
         <h2>Informa de casos en tu localidad</h2>
-        <form action="#">
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required>
-            <input type="email" name="email" placeholder="Ingresa tu correo..." required>
-            <input type="submit" name="valor" value="Registrate">
-        </form>
+       <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xbdenzzp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
 </section> <!-- FIN SUSCRIPCION -->
 <footer class="piedepagina" role="contentinfo">
